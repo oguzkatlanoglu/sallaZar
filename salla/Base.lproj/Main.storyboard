@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="salla" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anz-rk-awE">
+                                <rect key="frame" x="108" y="596" width="198" height="67"/>
+                                <color key="backgroundColor" red="0.1411764771" green="0.25098040700000002" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="CEf-SO-2fR"/>
+                                </constraints>
+                                <color key="tintColor" red="0.015686275440000001" green="0.015686275440000001" blue="0.015686275440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Salla" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="21"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sallaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tKf-YS-hac"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="one" translatesAutoresizingMaskIntoConstraints="NO" id="XUP-Q2-v0c">
+                                <rect key="frame" x="10" y="333" width="182" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="6KS-S4-YeL"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="two" translatesAutoresizingMaskIntoConstraints="NO" id="g4g-d2-eLz">
+                                <rect key="frame" x="200" y="333" width="182" height="187"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="salla" translatesAutoresizingMaskIntoConstraints="NO" id="DS5-27-eUp">
+                                <rect key="frame" x="0.0" y="46" width="393" height="279"/>
+                                <color key="backgroundColor" red="0.1411764771" green="0.25098040700000002" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.1411764771" green="0.25098040700000002" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="DS5-27-eUp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6L5-Cm-r7h"/>
+                            <constraint firstItem="DS5-27-eUp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Imd-UY-IW9"/>
+                            <constraint firstItem="anz-rk-awE" firstAttribute="top" secondItem="XUP-Q2-v0c" secondAttribute="bottom" constant="76" id="Olg-hU-l6r"/>
+                            <constraint firstItem="XUP-Q2-v0c" firstAttribute="top" secondItem="DS5-27-eUp" secondAttribute="bottom" constant="8" id="PdF-fN-PIr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g4g-d2-eLz" secondAttribute="trailing" constant="11" id="QFt-TF-cub"/>
+                            <constraint firstItem="anz-rk-awE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="Qul-aj-aIc"/>
+                            <constraint firstItem="XUP-Q2-v0c" firstAttribute="top" secondItem="g4g-d2-eLz" secondAttribute="top" id="TYB-of-Hj0"/>
+                            <constraint firstItem="DS5-27-eUp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-13" id="gfs-Im-nSO"/>
+                            <constraint firstItem="XUP-Q2-v0c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hMG-7C-lyh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="anz-rk-awE" secondAttribute="trailing" constant="87" id="kri-Dl-ePU"/>
+                            <constraint firstItem="XUP-Q2-v0c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="miV-RI-9m7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="anz-rk-awE" secondAttribute="bottom" constant="155" id="qHZ-hh-Bdl"/>
+                            <constraint firstItem="XUP-Q2-v0c" firstAttribute="bottom" secondItem="g4g-d2-eLz" secondAttribute="bottom" id="w1K-Xi-P0D"/>
+                            <constraint firstItem="g4g-d2-eLz" firstAttribute="leading" secondItem="XUP-Q2-v0c" secondAttribute="trailing" constant="8" id="z6U-DT-mj1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageOne" destination="XUP-Q2-v0c" id="aqW-PA-68c"/>
+                        <outlet property="imageSecond" destination="g4g-d2-eLz" id="Sm5-Py-KbA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119.84732824427481" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="one" width="187.33332824707031" height="186.33332824707031"/>
+        <image name="salla" width="500" height="500"/>
+        <image name="two" width="187.66667175292969" height="188.66667175292969"/>
+    </resources>
+</document>
